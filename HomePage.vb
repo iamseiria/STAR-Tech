@@ -3,6 +3,9 @@
     Private Sub btnLogOut_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogOut.Click
         btnLogOut.Show()
         Me.Close()
+        loginfrm.Show()
+
+
 
     End Sub
 
@@ -26,5 +29,9 @@
         Me.Close()
 
 
+    End Sub
+
+    Private Sub HomePage_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.CenterToScreen()
     End Sub
 End Class
